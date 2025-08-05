@@ -1,0 +1,213 @@
+/* Темная тема */
+
+/* Основной виджет */
+QWidget {
+    background-color: #36393f;
+    color: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Главное окно */
+QWidget#View {
+    background-color: #2f3136;
+}
+
+/* Панель управления */
+QWidget#control_panel {
+    background-color: #2f3136;
+    border-left: 1px solid #202225;
+}
+
+/* Область OpenGL */
+QWidget#opengl_widget {
+    background-color: #ffffff;
+    border: 2px solid #202225;
+    border-radius: 8px;
+}
+
+/* Группы элементов */
+QGroupBox {
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #40444b;
+    border-radius: 8px;
+    margin: 8px 4px;
+    padding-top: 15px;
+    color: #ffffff;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 8px 0 8px;
+    color: #ffffff;
+    background-color: #2f3136;
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #4752c4;
+}
+
+QPushButton:pressed {
+    background-color: #3c45a5;
+}
+
+QPushButton:disabled {
+    background-color: #4f545c;
+    color: #72767d;
+}
+
+/* Кнопка загрузки файла */
+QPushButton#pushButton_load_file {
+    background-color: #3ba55c;
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+QPushButton#pushButton_load_file:hover {
+    background-color: #2d7d32;
+}
+
+QPushButton#pushButton_load_file:pressed {
+    background-color: #1b5e20;
+}
+
+/* Слайдеры */
+QSlider::groove:horizontal {
+    border: none;
+    height: 6px;
+    background: #40444b;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #5865f2;
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin: -7px 0;
+    border-radius: 10px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #4752c4;
+}
+
+QSlider::handle:horizontal:pressed {
+    background: #3c45a5;
+}
+
+QSlider::sub-page:horizontal {
+    background: #5865f2;
+    border-radius: 3px;
+}
+
+QSlider::add-page:horizontal {
+    background: #40444b;
+    border-radius: 3px;
+}
+
+/* Лейблы */
+QLabel {
+    color: #dcddde;
+    font-size: 14px;
+    padding: 2px;
+}
+
+/* Лейблы для осей */
+QLabel#label_move_x,
+QLabel#label_move_y,
+QLabel#label_move_z,
+QLabel#label_rotate_x,
+QLabel#label_rotate_y,
+QLabel#label_rotate_z,
+QLabel#label_scale {
+    color: #b9bbbe;
+    font-weight: 600;
+    font-size: 13px;
+    min-width: 20px;
+}
+
+/* Заголовки секций */
+QLabel#label_move,
+QLabel#label_rotate {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 0px 4px 0px;
+}
+
+/* Информация о файле */
+QLabel#label_filename {
+    background-color: #40444b;
+    border: 1px solid #202225;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+QLabel#label_file_info {
+    color: #b9bbbe;
+    font-style: italic;
+    font-size: 13px;
+    padding: 4px 0px;
+}
+
+/* Скроллбары */
+QScrollBar:vertical {
+    background: #2f3136;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #40444b;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #4f545c;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Дополнительные элементы стиля */
+QWidget#groupBox_file {
+    border: 1px solid #3ba55c;
+}
+
+QWidget#groupBox_transform {
+    border: 1px solid #5865f2;
+}
+
+/* Мелкие детали */
+QWidget:focus {
+    outline: none;
+}
+
+/* Тултипы */
+QToolTip {
+    background-color: #18191c;
+    color: #ffffff;
+    border: 1px solid #40444b;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+}

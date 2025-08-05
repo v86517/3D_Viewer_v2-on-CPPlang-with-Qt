@@ -1,0 +1,54 @@
+# Основные настройки проекта
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "3DViewer"
+PROJECT_NUMBER         = "v2.0"
+OUTPUT_DIRECTORY       = ./docs
+OUTPUT_LANGUAGE        = Russian
+USE_MDFILE_AS_MAINPAGE = ./README.md
+OPTIMIZE_OUTPUT_FOR_C  = YES
+BUILTIN_STL_SUPPORT    = YES
+MARKDOWN_SUPPORT       = YES
+
+# Управление входными файлами
+INPUT                  = .
+FILE_PATTERNS          = *.cpp *.h README.md *.c
+RECURSIVE              = YES
+EXCLUDE                = ./makefiles ./build ./docs ./tests
+
+# Вывод документации
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+USE_PDFLATEX           = NO
+
+# Документация классов, методов и графики
+HAVE_DOT               = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+
+# Фильтрация и видимость
+EXTRACT_ALL            = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+SHOW_INCLUDE_FILES     = YES
+
+# Форматирование и комментарии
+TAB_SIZE               = 4
+JAVADOC_AUTOBRIEF      = YES
+JAVADOC_BANNER         = NO
+
+# Ошибки и предупреждения
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+
+# Индексация
+ALPHABETICAL_INDEX     = YES
+
+# Многоядерная генерация
+NUM_PROC_THREADS       = 4
