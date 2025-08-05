@@ -1,0 +1,13 @@
+services:
+  ubuntu_dev:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: ubuntu_dev
+    tty: true
+    volumes:
+      - type: bind
+        source: ../..
+        target: /project
+        bind:
+          create_host_path: true
